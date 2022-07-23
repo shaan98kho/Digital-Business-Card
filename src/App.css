@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.card__holder {
+  margin: 0 auto;
+  position: relative;
+  max-width: 317px;
+  width: 100%;
+  background: #1A1B21;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 5px 20px -10px #000;
+  opacity: 0.5;
+  transition: 1s;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__holder:hover {
+  box-shadow: 1px 5px 20px -10px #1b1b1b;  
+  opacity: 1;
+  transition: 0.5s;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.card__details {
+  text-align: center;
+  position: relative;
+  padding: 0px 30px 15px;
+}
+
+
+@keyframes card-light-vibrate {
+  from {
+    transform: translateX(0px);
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateX(90px);
+    transform: translateY(50px);
+  }
+
+  from {
+    transform: translateX(90px);
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateX(0px);
+    transform: translateY(10px);
+  }
+
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .card__holder {
+    animation: card-light-vibrate infinite 10s linear;
   }
 }

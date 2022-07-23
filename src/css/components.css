@@ -1,0 +1,94 @@
+.profilepic__img-holder img {
+    max-width: 317px;
+    width: 100%;
+}
+
+.name__holder h4 {
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.name__holder h5 {
+    font-family: 'inter';
+    font-weight: 100;
+    font-size: 13px;
+    color: #F3BF99;
+    margin: 5px 0;
+}
+
+.name__holder h6 {
+    font-family: 'inter';
+    font-weight: 100;
+    font-size: 10px;
+    color: #F5F5F5;
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+.buttons__holder button {
+    border-radius: 6px;
+    max-width: 115px;
+    width: 100%;
+    height: 34px;
+    margin: 5px;
+}
+
+.buttons__holder button:nth-child(2) {
+    background-color: #fff;
+}
+
+.buttons__holder button:nth-child(2) {
+    background-color: #5093E2;
+}
+
+.buttons__holder button a {
+    text-decoration: none;
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+.buttons__holder button:nth-child(1) a {
+    color: #374151;
+}
+
+.buttons__holder button:nth-child(2) a {
+    color: #fff;
+}
+
+.details__holder {
+    text-align: left;
+}
+
+.details__holder h4 {
+    color: #f5f5f5; 
+    margin: 20px 0px 5px;
+}
+
+.details__holder p {
+    color: #DCDCDC;
+    font-size: 10px;
+    font-family: 'inter';
+    font-weight: 100;
+    line-height: 15px;
+}
+
+.icons__holder {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    background: #161619;
+    padding: 15px 0;
+    border-width: 5px;
+    /* border: 1px #000; */
+    /*ltrb*/
+}
+
+.icons__holder img {
+    max-width: 25px;
+    width: 100%;
+    margin: 0 12px;
+}
